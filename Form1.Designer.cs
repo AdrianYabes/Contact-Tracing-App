@@ -60,6 +60,7 @@ namespace Contact_Tracing_App
             this.label1.Size = new System.Drawing.Size(131, 30);
             this.label1.TabIndex = 0;
             this.label1.Text = "First Name";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -72,6 +73,7 @@ namespace Contact_Tracing_App
             this.label2.Size = new System.Drawing.Size(151, 30);
             this.label2.TabIndex = 1;
             this.label2.Text = "Middle Initial";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -97,6 +99,7 @@ namespace Contact_Tracing_App
             this.label4.Size = new System.Drawing.Size(187, 30);
             this.label4.TabIndex = 3;
             this.label4.Text = "Contact Number";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -109,6 +112,7 @@ namespace Contact_Tracing_App
             this.label5.Size = new System.Drawing.Size(54, 30);
             this.label5.TabIndex = 4;
             this.label5.Text = "Age";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -142,6 +146,7 @@ namespace Contact_Tracing_App
             this.textBox1.Size = new System.Drawing.Size(258, 34);
             this.textBox1.TabIndex = 7;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -153,6 +158,7 @@ namespace Contact_Tracing_App
             this.textBox2.Size = new System.Drawing.Size(258, 34);
             this.textBox2.TabIndex = 8;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -164,6 +170,7 @@ namespace Contact_Tracing_App
             this.textBox3.Size = new System.Drawing.Size(258, 34);
             this.textBox3.TabIndex = 9;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -175,6 +182,7 @@ namespace Contact_Tracing_App
             this.textBox4.Size = new System.Drawing.Size(258, 34);
             this.textBox4.TabIndex = 10;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -186,6 +194,7 @@ namespace Contact_Tracing_App
             this.textBox5.Size = new System.Drawing.Size(258, 34);
             this.textBox5.TabIndex = 11;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox7
             // 
@@ -197,6 +206,7 @@ namespace Contact_Tracing_App
             this.textBox7.Size = new System.Drawing.Size(258, 34);
             this.textBox7.TabIndex = 12;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label8
             // 
@@ -209,6 +219,7 @@ namespace Contact_Tracing_App
             this.label8.Size = new System.Drawing.Size(473, 43);
             this.label8.TabIndex = 13;
             this.label8.Text = "COVID CONTRACT TRACING";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // button1
             // 
@@ -221,6 +232,7 @@ namespace Contact_Tracing_App
             this.button1.TabIndex = 14;
             this.button1.Text = "Confirm";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -233,6 +245,7 @@ namespace Contact_Tracing_App
             this.button2.TabIndex = 15;
             this.button2.Text = "Reset";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label9
             // 
@@ -245,13 +258,14 @@ namespace Contact_Tracing_App
             this.label9.Size = new System.Drawing.Size(256, 30);
             this.label9.TabIndex = 16;
             this.label9.Text = "Stay Safe and Healthy!";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // ContactTracingApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(574, 498);
+            this.ClientSize = new System.Drawing.Size(574, 486);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

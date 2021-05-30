@@ -212,13 +212,13 @@ namespace Contact_Tracing_App
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Yu Gothic", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Font = new System.Drawing.Font("Yu Gothic", 19.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Location = new System.Drawing.Point(46, 30);
+            this.label8.Location = new System.Drawing.Point(33, 28);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(473, 43);
+            this.label8.Size = new System.Drawing.Size(498, 42);
             this.label8.TabIndex = 13;
-            this.label8.Text = "COVID CONTRACT TRACING";
+            this.label8.Text = "COVID-19 CONTRACT TRACING";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // button1

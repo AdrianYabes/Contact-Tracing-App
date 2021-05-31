@@ -30,89 +30,25 @@ namespace Contact_Tracing_App
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracingApp));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.FirstName = new System.Windows.Forms.Label();
+            this.MidInitial = new System.Windows.Forms.Label();
+            this.LastName = new System.Windows.Forms.Label();
+            this.Gender = new System.Windows.Forms.Label();
+            this.ContactNumber = new System.Windows.Forms.Label();
+            this.EmailAddress = new System.Windows.Forms.Label();
+            this.Confirm = new System.Windows.Forms.Button();
+            this.Reset = new System.Windows.Forms.Button();
+            this.HomeAddress = new System.Windows.Forms.Label();
+            this.TextBox_First = new System.Windows.Forms.TextBox();
+            this.TextBox_Mid = new System.Windows.Forms.TextBox();
+            this.textBox_Last = new System.Windows.Forms.TextBox();
+            this.TextBox_Gender = new System.Windows.Forms.TextBox();
+            this.TextBox_Contact = new System.Windows.Forms.TextBox();
+            this.TextBox_Email = new System.Windows.Forms.TextBox();
+            this.TextBox_Home = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(33, 94);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "First Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(33, 135);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(151, 30);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Middle Initial";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(33, 178);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 30);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Last Name";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(33, 220);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(187, 30);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Contact Number";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Black;
-            this.label5.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(33, 260);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 30);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Age";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -122,91 +58,6 @@ namespace Contact_Tracing_App
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(0, 30);
             this.label6.TabIndex = 5;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Black;
-            this.label7.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.label7.Location = new System.Drawing.Point(33, 301);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 30);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Home Address";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(275, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(258, 34);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox2.ForeColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(275, 132);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(258, 34);
-            this.textBox2.TabIndex = 8;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox3.ForeColor = System.Drawing.Color.White;
-            this.textBox3.Location = new System.Drawing.Point(275, 175);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(258, 34);
-            this.textBox3.TabIndex = 9;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(275, 217);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(258, 34);
-            this.textBox4.TabIndex = 10;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // textBox5
-            // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox5.ForeColor = System.Drawing.Color.White;
-            this.textBox5.Location = new System.Drawing.Point(275, 256);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(258, 34);
-            this.textBox5.TabIndex = 11;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            // 
-            // textBox7
-            // 
-            this.textBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.textBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox7.ForeColor = System.Drawing.Color.White;
-            this.textBox7.Location = new System.Drawing.Point(275, 297);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(258, 34);
-            this.textBox7.TabIndex = 12;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // label8
             // 
@@ -219,70 +70,226 @@ namespace Contact_Tracing_App
             this.label8.Size = new System.Drawing.Size(498, 42);
             this.label8.TabIndex = 13;
             this.label8.Text = "COVID-19 CONTRACT TRACING";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.label8.Click += new System.EventHandler(this.COVID);
             // 
-            // button1
+            // FirstName
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(333, 370);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Confirm";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.FirstName.AutoSize = true;
+            this.FirstName.BackColor = System.Drawing.Color.Transparent;
+            this.FirstName.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.FirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.FirstName.Location = new System.Drawing.Point(49, 95);
+            this.FirstName.Name = "FirstName";
+            this.FirstName.Size = new System.Drawing.Size(131, 30);
+            this.FirstName.TabIndex = 16;
+            this.FirstName.Text = "First Name";
+            this.FirstName.Click += new System.EventHandler(this.FirstName_Click);
             // 
-            // button2
+            // MidInitial
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(126, 370);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 29);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.MidInitial.AutoSize = true;
+            this.MidInitial.BackColor = System.Drawing.Color.Transparent;
+            this.MidInitial.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.MidInitial.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.MidInitial.Location = new System.Drawing.Point(49, 136);
+            this.MidInitial.Name = "MidInitial";
+            this.MidInitial.Size = new System.Drawing.Size(151, 30);
+            this.MidInitial.TabIndex = 17;
+            this.MidInitial.Text = "Middle Initial";
+            this.MidInitial.Click += new System.EventHandler(this.MidInitial_Click);
             // 
-            // label9
+            // LastName
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label9.Location = new System.Drawing.Point(151, 427);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(256, 30);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Stay Safe and Healthy!";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.LastName.AutoSize = true;
+            this.LastName.BackColor = System.Drawing.Color.Transparent;
+            this.LastName.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LastName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LastName.Location = new System.Drawing.Point(50, 177);
+            this.LastName.Name = "LastName";
+            this.LastName.Size = new System.Drawing.Size(130, 30);
+            this.LastName.TabIndex = 18;
+            this.LastName.Text = "Last Name";
+            this.LastName.Click += new System.EventHandler(this.LastName_Click);
+            // 
+            // Gender
+            // 
+            this.Gender.AutoSize = true;
+            this.Gender.BackColor = System.Drawing.Color.Transparent;
+            this.Gender.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Gender.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Gender.Location = new System.Drawing.Point(49, 224);
+            this.Gender.Name = "Gender";
+            this.Gender.Size = new System.Drawing.Size(90, 30);
+            this.Gender.TabIndex = 19;
+            this.Gender.Text = "Gender";
+            this.Gender.Click += new System.EventHandler(this.Gender_Click);
+            // 
+            // ContactNumber
+            // 
+            this.ContactNumber.AutoSize = true;
+            this.ContactNumber.BackColor = System.Drawing.Color.Transparent;
+            this.ContactNumber.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ContactNumber.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ContactNumber.Location = new System.Drawing.Point(49, 265);
+            this.ContactNumber.Name = "ContactNumber";
+            this.ContactNumber.Size = new System.Drawing.Size(187, 30);
+            this.ContactNumber.TabIndex = 20;
+            this.ContactNumber.Text = "Contact Number";
+            this.ContactNumber.Click += new System.EventHandler(this.ContactNumber_Click);
+            // 
+            // EmailAddress
+            // 
+            this.EmailAddress.AutoSize = true;
+            this.EmailAddress.BackColor = System.Drawing.Color.Transparent;
+            this.EmailAddress.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.EmailAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.EmailAddress.Location = new System.Drawing.Point(49, 306);
+            this.EmailAddress.Name = "EmailAddress";
+            this.EmailAddress.Size = new System.Drawing.Size(165, 30);
+            this.EmailAddress.TabIndex = 21;
+            this.EmailAddress.Text = "Email Address";
+            this.EmailAddress.Click += new System.EventHandler(this.EmailAddress_Click);
+            // 
+            // Confirm
+            // 
+            this.Confirm.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Confirm.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Confirm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Confirm.Location = new System.Drawing.Point(353, 425);
+            this.Confirm.Name = "Confirm";
+            this.Confirm.Size = new System.Drawing.Size(94, 29);
+            this.Confirm.TabIndex = 22;
+            this.Confirm.Text = "Confirm";
+            this.Confirm.UseVisualStyleBackColor = false;
+            this.Confirm.Click += new System.EventHandler(this.Confirm_Click);
+            // 
+            // Reset
+            // 
+            this.Reset.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Reset.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Reset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Reset.Location = new System.Drawing.Point(134, 425);
+            this.Reset.Name = "Reset";
+            this.Reset.Size = new System.Drawing.Size(94, 29);
+            this.Reset.TabIndex = 23;
+            this.Reset.Text = "Reset";
+            this.Reset.UseVisualStyleBackColor = false;
+            this.Reset.Click += new System.EventHandler(this.Reset_Click);
+            // 
+            // HomeAddress
+            // 
+            this.HomeAddress.AutoSize = true;
+            this.HomeAddress.BackColor = System.Drawing.Color.Transparent;
+            this.HomeAddress.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.HomeAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.HomeAddress.Location = new System.Drawing.Point(49, 348);
+            this.HomeAddress.Name = "HomeAddress";
+            this.HomeAddress.Size = new System.Drawing.Size(175, 30);
+            this.HomeAddress.TabIndex = 24;
+            this.HomeAddress.Text = "Homel Address";
+            this.HomeAddress.Click += new System.EventHandler(this.HomeAddress_Click_1);
+            // 
+            // TextBox_First
+            // 
+            this.TextBox_First.BackColor = System.Drawing.Color.Black;
+            this.TextBox_First.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextBox_First.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TextBox_First.Location = new System.Drawing.Point(260, 90);
+            this.TextBox_First.Name = "TextBox_First";
+            this.TextBox_First.Size = new System.Drawing.Size(253, 35);
+            this.TextBox_First.TabIndex = 25;
+            this.TextBox_First.TextChanged += new System.EventHandler(this.TextBox_First_TextChanged);
+            // 
+            // TextBox_Mid
+            // 
+            this.TextBox_Mid.BackColor = System.Drawing.Color.Black;
+            this.TextBox_Mid.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextBox_Mid.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TextBox_Mid.Location = new System.Drawing.Point(260, 131);
+            this.TextBox_Mid.Name = "TextBox_Mid";
+            this.TextBox_Mid.Size = new System.Drawing.Size(253, 35);
+            this.TextBox_Mid.TabIndex = 26;
+            this.TextBox_Mid.TextChanged += new System.EventHandler(this.TextBox_Mid_TextChanged);
+            // 
+            // textBox_Last
+            // 
+            this.textBox_Last.BackColor = System.Drawing.Color.Black;
+            this.textBox_Last.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox_Last.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBox_Last.Location = new System.Drawing.Point(260, 172);
+            this.textBox_Last.Name = "textBox_Last";
+            this.textBox_Last.Size = new System.Drawing.Size(253, 35);
+            this.textBox_Last.TabIndex = 27;
+            this.textBox_Last.TextChanged += new System.EventHandler(this.textBox_Last_TextChanged);
+            // 
+            // TextBox_Gender
+            // 
+            this.TextBox_Gender.BackColor = System.Drawing.Color.Black;
+            this.TextBox_Gender.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextBox_Gender.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TextBox_Gender.Location = new System.Drawing.Point(260, 213);
+            this.TextBox_Gender.Name = "TextBox_Gender";
+            this.TextBox_Gender.Size = new System.Drawing.Size(253, 35);
+            this.TextBox_Gender.TabIndex = 28;
+            this.TextBox_Gender.TextChanged += new System.EventHandler(this.TextBox_Gender_TextChanged);
+            // 
+            // TextBox_Contact
+            // 
+            this.TextBox_Contact.BackColor = System.Drawing.Color.Black;
+            this.TextBox_Contact.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextBox_Contact.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TextBox_Contact.Location = new System.Drawing.Point(260, 254);
+            this.TextBox_Contact.Name = "TextBox_Contact";
+            this.TextBox_Contact.Size = new System.Drawing.Size(253, 35);
+            this.TextBox_Contact.TabIndex = 29;
+            this.TextBox_Contact.TextChanged += new System.EventHandler(this.TextBox_Contact_TextChanged);
+            // 
+            // TextBox_Email
+            // 
+            this.TextBox_Email.BackColor = System.Drawing.Color.Black;
+            this.TextBox_Email.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextBox_Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TextBox_Email.Location = new System.Drawing.Point(260, 295);
+            this.TextBox_Email.Name = "TextBox_Email";
+            this.TextBox_Email.Size = new System.Drawing.Size(253, 35);
+            this.TextBox_Email.TabIndex = 30;
+            this.TextBox_Email.TextChanged += new System.EventHandler(this.TextBox_Email_TextChanged);
+            // 
+            // TextBox_Home
+            // 
+            this.TextBox_Home.BackColor = System.Drawing.Color.Black;
+            this.TextBox_Home.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextBox_Home.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TextBox_Home.Location = new System.Drawing.Point(260, 336);
+            this.TextBox_Home.Name = "TextBox_Home";
+            this.TextBox_Home.Size = new System.Drawing.Size(253, 35);
+            this.TextBox_Home.TabIndex = 31;
+            this.TextBox_Home.TextChanged += new System.EventHandler(this.TextBox_Home_TextChanged);
             // 
             // ContactTracingApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(574, 486);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(564, 496);
+            this.Controls.Add(this.TextBox_Home);
+            this.Controls.Add(this.TextBox_Email);
+            this.Controls.Add(this.TextBox_Contact);
+            this.Controls.Add(this.TextBox_Gender);
+            this.Controls.Add(this.textBox_Last);
+            this.Controls.Add(this.TextBox_Mid);
+            this.Controls.Add(this.TextBox_First);
+            this.Controls.Add(this.HomeAddress);
+            this.Controls.Add(this.Reset);
+            this.Controls.Add(this.Confirm);
+            this.Controls.Add(this.EmailAddress);
+            this.Controls.Add(this.ContactNumber);
+            this.Controls.Add(this.Gender);
+            this.Controls.Add(this.LastName);
+            this.Controls.Add(this.MidInitial);
+            this.Controls.Add(this.FirstName);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "ContactTracingApp";
             this.Text = "COVID Contact Tracing App";
             this.Load += new System.EventHandler(this.ContactTracingApp_Load);
@@ -292,24 +299,25 @@ namespace Contact_Tracing_App
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label MiddleInitial;
+        private System.Windows.Forms.Label FirstName;
+        private System.Windows.Forms.Label MidInitial;
+        private System.Windows.Forms.Label LastName;
+        private System.Windows.Forms.Label Gender;
+        private System.Windows.Forms.Label ContactNumber;
+        private System.Windows.Forms.Label EmailAddress;
+        private System.Windows.Forms.Button Confirm;
+        private System.Windows.Forms.Button Reset;
+        private System.Windows.Forms.Label HomeAddress;
+        private System.Windows.Forms.TextBox TextBox_First;
+        private System.Windows.Forms.TextBox TextBox_Mid;
+        private System.Windows.Forms.TextBox textBox_Last;
+        private System.Windows.Forms.TextBox TextBox_Gender;
+        private System.Windows.Forms.TextBox TextBox_Contact;
+        private System.Windows.Forms.TextBox TextBox_Email;
+        private System.Windows.Forms.TextBox TextBox_Home;
     }
 }
 

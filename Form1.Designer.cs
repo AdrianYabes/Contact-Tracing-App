@@ -271,7 +271,7 @@ namespace Contact_Tracing_App
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(564, 496);
+            this.ClientSize = new System.Drawing.Size(562, 496);
             this.Controls.Add(this.TextBox_Home);
             this.Controls.Add(this.TextBox_Email);
             this.Controls.Add(this.TextBox_Contact);
@@ -290,6 +290,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.FirstName);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
+            this.MaximizeBox = false;
             this.Name = "ContactTracingApp";
             this.Text = "COVID Contact Tracing App";
             this.Load += new System.EventHandler(this.ContactTracingApp_Load);

@@ -78,7 +78,7 @@ namespace Contact_Tracing_App
 
         private void Reset_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void TextBox_First_TextChanged(object sender, EventArgs e)
@@ -114,6 +114,18 @@ namespace Contact_Tracing_App
         private void TextBox_Home_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Reset_Button(object sender, EventArgs e)
+        {
+            TextBox_First.Text = "";
+            TextBox_Mid.Text = "";
+            textBox_Last.Text = "";
+            TextBox_Gender.Text = "";
+            TextBox_Contact.Text = "";
+            TextBox_Email.Text = "";
+            TextBox_Home.Text = "";
+            MessageBox.Show("Your Information is secured. Stay safe and Godbless!");
         }
     }
 }

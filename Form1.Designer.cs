@@ -291,6 +291,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Second";
             this.Text = "COVID Contact Tracing App";
             this.Load += new System.EventHandler(this.ContactTracingApp_Load);

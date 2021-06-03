@@ -123,6 +123,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
             this.Name = "First";
             this.Text = "COVID Contact Tracing App";
             this.ResumeLayout(false);
@@ -137,7 +138,6 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button Next_Button;
         private System.Windows.Forms.Button NextButton;
     }
 }

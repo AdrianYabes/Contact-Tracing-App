@@ -17,8 +17,10 @@ namespace Contact_Tracing_App
 
         private void Next_Button_Click(object sender, EventArgs e)
         {
-            Second SecondPage = new Second();
-            SecondPage.Show();
+            {
+                Second SecondPage = new Second();
+                SecondPage.Show();
+            }
         }
     }
 }

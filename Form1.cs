@@ -136,6 +136,8 @@ namespace Contact_Tracing_App
 
             MessageBox.Show("Thank you for cooperation. Stay safe and Godbless.");
 
+            Third ThirdPage = new Third();
+            ThirdPage.Show();
         }
 
     }

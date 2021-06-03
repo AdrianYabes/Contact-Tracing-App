@@ -1,7 +1,7 @@
 ﻿
 namespace Contact_Tracing_App
 {
-    partial class ContactTracingApp
+    partial class Second
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace Contact_Tracing_App
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracingApp));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Second));
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.FirstName = new System.Windows.Forms.Label();
@@ -266,7 +266,7 @@ namespace Contact_Tracing_App
             this.TextBox_Home.TabIndex = 31;
             this.TextBox_Home.TextChanged += new System.EventHandler(this.TextBox_Home_TextChanged);
             // 
-            // ContactTracingApp
+            // Second
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -291,7 +291,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.MaximizeBox = false;
-            this.Name = "ContactTracingApp";
+            this.Name = "Second";
             this.Text = "COVID Contact Tracing App";
             this.Load += new System.EventHandler(this.ContactTracingApp_Load);
             this.ResumeLayout(false);
@@ -302,7 +302,6 @@ namespace Contact_Tracing_App
         #endregion
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label MiddleInitial;
         private System.Windows.Forms.Label FirstName;
         private System.Windows.Forms.Label MidInitial;
         private System.Windows.Forms.Label LastName;

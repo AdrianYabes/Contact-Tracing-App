@@ -11,9 +11,9 @@ using System.IO;
 
 namespace Contact_Tracing_App
 {
-    public partial class ContactTracingApp : Form
+    public partial class Second : Form
     {
-        public ContactTracingApp()
+        public Second()
         {
             InitializeComponent();
         }
@@ -120,24 +120,18 @@ namespace Contact_Tracing_App
             TextBox_Home.Text = "";
             MessageBox.Show("Your Information is secured. Stay safe and Godbless!");
         }
-        private void Confirm_Click(object sender, EventArgs e)
+        public void Confirm_Click(object sender, EventArgs e)
         {
             StreamWriter ContactTracingInformation;
             ContactTracingInformation = File.AppendText(@"D:\BSCpE-2ND SEMESTER\COVID Contact Tracing App.txt");
-            ContactTracingInformation.WriteLine(FirstName.Text);
-            ContactTracingInformation.WriteLine(TextBox_First.Text);
-            ContactTracingInformation.WriteLine(LastName.Text);
-            ContactTracingInformation.WriteLine(textBox_Last.Text);
-            ContactTracingInformation.WriteLine(MidInitial.Text);
-            ContactTracingInformation.WriteLine(TextBox_Mid.Text);
-            ContactTracingInformation.WriteLine(Gender.Text);
-            ContactTracingInformation.WriteLine(TextBox_Gender.Text);
-            ContactTracingInformation.WriteLine(ContactNumber.Text);
-            ContactTracingInformation.WriteLine(TextBox_Contact.Text);
-            ContactTracingInformation.WriteLine(EmailAddress.Text);
-            ContactTracingInformation.WriteLine(TextBox_Email.Text);
-            ContactTracingInformation.WriteLine(HomeAddress.Text);
-            ContactTracingInformation.WriteLine(TextBox_Home.Text);
+            ContactTracingInformation.WriteLine(FirstName.Text + ":" + TextBox_First.Text);
+            ContactTracingInformation.WriteLine(LastName.Text + ":" + textBox_Last.Text);
+            ContactTracingInformation.WriteLine(MidInitial.Text + ":" + TextBox_Mid.Text);
+            ContactTracingInformation.WriteLine(Gender.Text + ":" + TextBox_Gender.Text);
+            ContactTracingInformation.WriteLine(ContactNumber.Text + ":" + TextBox_Contact.Text);
+            ContactTracingInformation.WriteLine(EmailAddress.Text + ":" + TextBox_Email.Text);
+            ContactTracingInformation.WriteLine(HomeAddress.Text + ":" + TextBox_Home.Text);
+            ContactTracingInformation.WriteLine(".......................");
             ContactTracingInformation.Close();
 
             MessageBox.Show("Thank you for cooperation. Stay safe and Godbless.");

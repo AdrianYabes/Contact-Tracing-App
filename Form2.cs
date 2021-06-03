@@ -8,11 +8,17 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing_App
 {
-    public partial class Form2 : Form
+    public partial class First : Form
     {
-        public Form2()
+        public First()
         {
             InitializeComponent();
+        }
+
+        private void Next_Button_Click(object sender, EventArgs e)
+        {
+            Second SecondPage = new Second();
+            SecondPage.Show();
         }
     }
 }

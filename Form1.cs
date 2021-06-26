@@ -131,7 +131,7 @@ namespace Contact_Tracing_App
             ContactTracingInformation.WriteLine(ContactNumber.Text + ":" + TextBox_Contact.Text);
             ContactTracingInformation.WriteLine(EmailAddress.Text + ":" + TextBox_Email.Text);
             ContactTracingInformation.WriteLine(HomeAddress.Text + ":" + TextBox_Home.Text);
-            ContactTracingInformation.WriteLine(".......................");
+            ContactTracingInformation.WriteLine("........................................................");
             ContactTracingInformation.Close();
 
             MessageBox.Show("Thank you for cooperation. Stay safe and Godbless.");

@@ -116,7 +116,7 @@ namespace Contact_Tracing_App
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(562, 293);
+            this.ClientSize = new System.Drawing.Size(566, 304);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);

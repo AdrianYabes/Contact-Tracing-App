@@ -118,7 +118,7 @@ namespace Contact_Tracing_App
             TextBox_Contact.Text = "";
             TextBox_Email.Text = "";
             TextBox_Home.Text = "";
-            MessageBox.Show("Your Information is secured. Stay safe and Godbless!");
+            MessageBox.Show("Your Information is secured. Stay safe and Godbless!", "Thank you!", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
         public void Confirm_Click(object sender, EventArgs e)
         {
@@ -134,7 +134,7 @@ namespace Contact_Tracing_App
             ContactTracingInformation.WriteLine("........................................................");
             ContactTracingInformation.Close();
 
-            MessageBox.Show("Thank you for cooperation. Stay safe and Godbless.");
+            MessageBox.Show("Thank you for cooperation. Stay safe and Godbless.", "Thank you!", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             Third ThirdPage = new Third();
             ThirdPage.Show();

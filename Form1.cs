@@ -23,88 +23,7 @@ namespace Contact_Tracing_App
 
         }
 
-
         private void COVID(object sender, EventArgs e)
-        {
-
-        }
-
-
-
-
-        private void Information_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FirstName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MidInitial_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void LastName_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Gender_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ContactNumber_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void EmailAddress_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void HomeAddress_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void TextBox_First_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox_Mid_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox_Gender_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_Last_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox_Contact_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox_Email_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TextBox_Home_TextChanged(object sender, EventArgs e)
         {
 
         }
@@ -113,7 +32,7 @@ namespace Contact_Tracing_App
         {
             TextBox_First.Text = "";
             TextBox_Mid.Text = "";
-            textBox_Last.Text = "";
+            TextBox_Last.Text = "";
             TextBox_Gender.Text = "";
             TextBox_Contact.Text = "";
             TextBox_Email.Text = "";
@@ -125,7 +44,7 @@ namespace Contact_Tracing_App
             StreamWriter ContactTracingInformation;
             ContactTracingInformation = File.AppendText(@"D:\BSCpE-2ND SEMESTER\COVID Contact Tracing App.txt");
             ContactTracingInformation.WriteLine(FirstName.Text + ":" + TextBox_First.Text);
-            ContactTracingInformation.WriteLine(LastName.Text + ":" + textBox_Last.Text);
+            ContactTracingInformation.WriteLine(LastName.Text + ":" + TextBox_Last.Text);
             ContactTracingInformation.WriteLine(MidInitial.Text + ":" + TextBox_Mid.Text);
             ContactTracingInformation.WriteLine(Gender.Text + ":" + TextBox_Gender.Text);
             ContactTracingInformation.WriteLine(ContactNumber.Text + ":" + TextBox_Contact.Text);
@@ -139,11 +58,6 @@ namespace Contact_Tracing_App
 
             Third ThirdPage = new Third();
             ThirdPage.Show();
-        }
-
-        private void Date_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

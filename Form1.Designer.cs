@@ -48,7 +48,7 @@ namespace Contact_Tracing_App
             this.TextBox_Contact = new System.Windows.Forms.TextBox();
             this.TextBox_Email = new System.Windows.Forms.TextBox();
             this.TextBox_Home = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Date = new System.Windows.Forms.Label();
             this.TextBox_Date = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
@@ -268,18 +268,18 @@ namespace Contact_Tracing_App
             this.TextBox_Home.TabIndex = 31;
             this.TextBox_Home.TextChanged += new System.EventHandler(this.TextBox_Home_TextChanged);
             // 
-            // label1
+            // Date
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(37, 382);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 30);
-            this.label1.TabIndex = 32;
-            this.label1.Text = "Date [DD/MM/YY]";
-            this.label1.Click += new System.EventHandler(this.Date_Click);
+            this.Date.AutoSize = true;
+            this.Date.BackColor = System.Drawing.Color.Transparent;
+            this.Date.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Date.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Date.Location = new System.Drawing.Point(37, 382);
+            this.Date.Name = "Date";
+            this.Date.Size = new System.Drawing.Size(217, 30);
+            this.Date.TabIndex = 32;
+            this.Date.Text = "Date [DD/MM/YY]";
+            this.Date.Click += new System.EventHandler(this.Date_Click);
             // 
             // TextBox_Date
             // 
@@ -298,7 +298,7 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(562, 496);
             this.Controls.Add(this.TextBox_Date);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Date);
             this.Controls.Add(this.TextBox_Home);
             this.Controls.Add(this.TextBox_Email);
             this.Controls.Add(this.TextBox_Contact);
@@ -346,7 +346,7 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox TextBox_Contact;
         private System.Windows.Forms.TextBox TextBox_Email;
         private System.Windows.Forms.TextBox TextBox_Home;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Date;
         private System.Windows.Forms.TextBox TextBox_Date;
     }
 }

@@ -131,6 +131,7 @@ namespace Contact_Tracing_App
             ContactTracingInformation.WriteLine(ContactNumber.Text + ":" + TextBox_Contact.Text);
             ContactTracingInformation.WriteLine(EmailAddress.Text + ":" + TextBox_Email.Text);
             ContactTracingInformation.WriteLine(HomeAddress.Text + ":" + TextBox_Home.Text);
+            ContactTracingInformation.WriteLine(Date.Text + ":" + TextBox_Date.Text);
             ContactTracingInformation.WriteLine("........................................................");
             ContactTracingInformation.Close();
 
@@ -138,11 +139,6 @@ namespace Contact_Tracing_App
 
             Third ThirdPage = new Third();
             ThirdPage.Show();
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void Date_Click(object sender, EventArgs e)

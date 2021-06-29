@@ -48,6 +48,8 @@ namespace Contact_Tracing_App
             this.TextBox_Contact = new System.Windows.Forms.TextBox();
             this.TextBox_Email = new System.Windows.Forms.TextBox();
             this.TextBox_Home = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TextBox_Date = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label6
@@ -78,7 +80,7 @@ namespace Contact_Tracing_App
             this.FirstName.BackColor = System.Drawing.Color.Transparent;
             this.FirstName.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FirstName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.FirstName.Location = new System.Drawing.Point(49, 95);
+            this.FirstName.Location = new System.Drawing.Point(39, 90);
             this.FirstName.Name = "FirstName";
             this.FirstName.Size = new System.Drawing.Size(131, 30);
             this.FirstName.TabIndex = 16;
@@ -91,7 +93,7 @@ namespace Contact_Tracing_App
             this.MidInitial.BackColor = System.Drawing.Color.Transparent;
             this.MidInitial.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.MidInitial.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.MidInitial.Location = new System.Drawing.Point(49, 136);
+            this.MidInitial.Location = new System.Drawing.Point(39, 131);
             this.MidInitial.Name = "MidInitial";
             this.MidInitial.Size = new System.Drawing.Size(151, 30);
             this.MidInitial.TabIndex = 17;
@@ -104,7 +106,7 @@ namespace Contact_Tracing_App
             this.LastName.BackColor = System.Drawing.Color.Transparent;
             this.LastName.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.LastName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LastName.Location = new System.Drawing.Point(50, 177);
+            this.LastName.Location = new System.Drawing.Point(39, 172);
             this.LastName.Name = "LastName";
             this.LastName.Size = new System.Drawing.Size(130, 30);
             this.LastName.TabIndex = 18;
@@ -117,7 +119,7 @@ namespace Contact_Tracing_App
             this.Gender.BackColor = System.Drawing.Color.Transparent;
             this.Gender.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Gender.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Gender.Location = new System.Drawing.Point(49, 224);
+            this.Gender.Location = new System.Drawing.Point(39, 218);
             this.Gender.Name = "Gender";
             this.Gender.Size = new System.Drawing.Size(90, 30);
             this.Gender.TabIndex = 19;
@@ -130,7 +132,7 @@ namespace Contact_Tracing_App
             this.ContactNumber.BackColor = System.Drawing.Color.Transparent;
             this.ContactNumber.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ContactNumber.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ContactNumber.Location = new System.Drawing.Point(49, 265);
+            this.ContactNumber.Location = new System.Drawing.Point(39, 259);
             this.ContactNumber.Name = "ContactNumber";
             this.ContactNumber.Size = new System.Drawing.Size(187, 30);
             this.ContactNumber.TabIndex = 20;
@@ -143,7 +145,7 @@ namespace Contact_Tracing_App
             this.EmailAddress.BackColor = System.Drawing.Color.Transparent;
             this.EmailAddress.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.EmailAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.EmailAddress.Location = new System.Drawing.Point(49, 306);
+            this.EmailAddress.Location = new System.Drawing.Point(39, 300);
             this.EmailAddress.Name = "EmailAddress";
             this.EmailAddress.Size = new System.Drawing.Size(165, 30);
             this.EmailAddress.TabIndex = 21;
@@ -155,7 +157,7 @@ namespace Contact_Tracing_App
             this.Confirm.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Confirm.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Confirm.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Confirm.Location = new System.Drawing.Point(353, 425);
+            this.Confirm.Location = new System.Drawing.Point(349, 445);
             this.Confirm.Name = "Confirm";
             this.Confirm.Size = new System.Drawing.Size(94, 29);
             this.Confirm.TabIndex = 22;
@@ -168,7 +170,7 @@ namespace Contact_Tracing_App
             this.Reset.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Reset.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Reset.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Reset.Location = new System.Drawing.Point(134, 425);
+            this.Reset.Location = new System.Drawing.Point(142, 445);
             this.Reset.Name = "Reset";
             this.Reset.Size = new System.Drawing.Size(94, 29);
             this.Reset.TabIndex = 23;
@@ -182,7 +184,7 @@ namespace Contact_Tracing_App
             this.HomeAddress.BackColor = System.Drawing.Color.Transparent;
             this.HomeAddress.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.HomeAddress.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.HomeAddress.Location = new System.Drawing.Point(49, 348);
+            this.HomeAddress.Location = new System.Drawing.Point(39, 341);
             this.HomeAddress.Name = "HomeAddress";
             this.HomeAddress.Size = new System.Drawing.Size(175, 30);
             this.HomeAddress.TabIndex = 24;
@@ -266,12 +268,37 @@ namespace Contact_Tracing_App
             this.TextBox_Home.TabIndex = 31;
             this.TextBox_Home.TextChanged += new System.EventHandler(this.TextBox_Home_TextChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(37, 382);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(217, 30);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Date [DD/MM/YY]";
+            this.label1.Click += new System.EventHandler(this.Date_Click);
+            // 
+            // TextBox_Date
+            // 
+            this.TextBox_Date.BackColor = System.Drawing.Color.Black;
+            this.TextBox_Date.Font = new System.Drawing.Font("Yu Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TextBox_Date.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TextBox_Date.Location = new System.Drawing.Point(260, 377);
+            this.TextBox_Date.Name = "TextBox_Date";
+            this.TextBox_Date.Size = new System.Drawing.Size(253, 35);
+            this.TextBox_Date.TabIndex = 33;
+            // 
             // Second
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(562, 496);
+            this.Controls.Add(this.TextBox_Date);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.TextBox_Home);
             this.Controls.Add(this.TextBox_Email);
             this.Controls.Add(this.TextBox_Contact);
@@ -319,6 +346,8 @@ namespace Contact_Tracing_App
         private System.Windows.Forms.TextBox TextBox_Contact;
         private System.Windows.Forms.TextBox TextBox_Email;
         private System.Windows.Forms.TextBox TextBox_Home;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TextBox_Date;
     }
 }
 

@@ -140,5 +140,14 @@ namespace Contact_Tracing_App
             ThirdPage.Show();
         }
 
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Date_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

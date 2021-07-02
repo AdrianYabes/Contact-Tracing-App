@@ -17,17 +17,6 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
-
-        private void ContactTracingApp_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void COVID(object sender, EventArgs e)
-        {
-
-        }
-
         private void Reset_Button(object sender, EventArgs e)
         {
             TextBox_First.Text = "";
@@ -56,9 +45,11 @@ namespace Contact_Tracing_App
             ContactTracingInformation.Close();
 
             MessageBox.Show("Thank you for cooperation. Stay safe and Godbless.", "Thank you!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
             Third ThirdPage = new Third();
             ThirdPage.Show();
+        }
+        private void COVID(object sender, EventArgs e)
+        {
         }
     }
 }

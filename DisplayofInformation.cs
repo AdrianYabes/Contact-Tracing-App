@@ -15,7 +15,6 @@ namespace Contact_Tracing_App
         {
             InitializeComponent();
         }
-
         private void HumanDisplayOfInformation_TextChanged(object sender, EventArgs e)
         {
             StreamReader HumanInformation;

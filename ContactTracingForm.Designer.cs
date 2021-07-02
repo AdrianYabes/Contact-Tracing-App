@@ -3,7 +3,15 @@ namespace Contact_Tracing_App
 {
     partial class Second
     {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
         private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -305,7 +313,7 @@ namespace Contact_Tracing_App
             this.MinimizeBox = false;
             this.Name = "Second";
             this.Text = "COVID Contact Tracing App";
-            this.Load += new System.EventHandler(this.ContactTracingApp_Load);
+            this.Load += new System.EventHandler(this.COVID);
             this.ResumeLayout(false);
             this.PerformLayout();
 

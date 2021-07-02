@@ -3,15 +3,7 @@ namespace Contact_Tracing_App
 {
     partial class Second
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
-
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -279,7 +271,7 @@ namespace Contact_Tracing_App
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(33, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(502, 43);
+            this.label1.Size = new System.Drawing.Size(493, 43);
             this.label1.TabIndex = 40;
             this.label1.Text = "COVID-19 CONTACT TRACING";
             // 

@@ -52,6 +52,7 @@ namespace Contact_Tracing_App
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(494, 450);
             this.Controls.Add(this.HumanDisplayOfInformation);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "Third";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

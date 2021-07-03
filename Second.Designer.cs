@@ -310,7 +310,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.MidInitial);
             this.Controls.Add(this.FirstName);
             this.Controls.Add(this.label6);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Second";

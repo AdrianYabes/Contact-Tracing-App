@@ -54,6 +54,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.HumanDisplayOfInformation);
             this.MaximizeBox = false;
             this.Name = "Third";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COVID Contact Tracing App";
             this.ResumeLayout(false);
             this.PerformLayout();

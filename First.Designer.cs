@@ -125,6 +125,7 @@ namespace Contact_Tracing_App
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "First";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "COVID Contact Tracing App";
             this.ResumeLayout(false);
             this.PerformLayout();
